@@ -27,4 +27,4 @@ Sumif
   =Unique(QUERY({January!C2:C;February!C2:C;March!C2:C;April!C2:C;May!C2:C;June!C2:C;July!C2:C;August!C2:C;September!C2:C;October!C2:C;November!C2:C;December!C2:C},"Select * where Col1 is not null"))
   
   
-  =IMPORTRANGE("https://docs.google.com/spreadsheets/d/1REQVq3ytLGlhgwW15H7mKSO_wSb5KFcnqYRsXWFjAik/edit#gid=2108213232","DataConsolidation!A:E")
+  =IMPORTRANGE("URLofSheetpasted here","DataConsolidation!A:E")
