@@ -49,3 +49,6 @@ Example
 =IMPORTRANGE("URLofSheetpasted here","DataConsolidation!A:E")
 Explainer 
 Copy and paste url of sheet between "" and define the sheet inside "" 
+
+//////////
+=MID(C4,FIND(".ulenscale",C4)-10, 6)
