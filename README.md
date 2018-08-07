@@ -50,5 +50,8 @@ Example
 Explainer 
 Copy and paste url of sheet between "" and define the sheet inside "" 
 
-//////////
+////////// 
 =MID(C4,FIND(".ulenscale",C4)-10, 6)
+
+//the bellow query can be used to function as a Vlookup index match/// remember data should be plain text//////
+=query($D$1:$E$21, "select E where D ='" & B21 & "' limit 10",0)
