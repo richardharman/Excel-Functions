@@ -58,5 +58,5 @@ Copy and paste url of sheet between "" and define the sheet inside ""
 
 
 
-////////// used to import specicifc data based on keyword
+////////// used to import specific data based on keyword
 =query(IMPORTRANGE("url","ALLUPLOADS!A:I"),"select Col1,Col2,Col3,Col4,Col5,Col6,Col7,Col8,Col9 where Col6='Surf'")
