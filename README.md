@@ -55,3 +55,8 @@ Copy and paste url of sheet between "" and define the sheet inside ""
 
 //the bellow query can be used to function as a Vlookup index match/// remember data should be plain text//////
 =query($D$1:$E$21, "select E where D ='" & B21 & "' limit 10",0)
+
+
+
+////////// used to import specicifc data based on keyword
+=query(IMPORTRANGE("url","ALLUPLOADS!A:I"),"select Col1,Col2,Col3,Col4,Col5,Col6,Col7,Col8,Col9 where Col6='Surf'")
