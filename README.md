@@ -60,3 +60,14 @@ Copy and paste url of sheet between "" and define the sheet inside ""
 
 ////////// used to import specific data based on keyword
 =query(IMPORTRANGE("url","ALLUPLOADS!A:I"),"select Col1,Col2,Col3,Col4,Col5,Col6,Col7,Col8,Col9 where Col6='Surf'")
+
+
+
+This is hte one function used to import, brand data into a brand sheet that should only be viewable by client
+=query(IMPORTRANGE("URL of ths Sheet","ALLUPLOADS!A:I"),"select Col1,Col2,Col3,Col4,Col5,Col6,Col7,Col8,Col9 where Col6='Brand Name'")	
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+This extracts the TAB ID, Note that TAB IDs with 6 digits have a space at the end.//////////////////////////////////
+=LEFT(B2,7)	
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+This pulls all the User Name Sheets to 'sheet' which is not editable, (so that it won't break). Also it only pulls Unique Rows, so if a user duplicated their Entries then it won't be dupliacted 
+=Unique(QUERY({USER.NAME!A2:I;USER.NAME!A2:I},"Select * where Col2 is not null"))	
