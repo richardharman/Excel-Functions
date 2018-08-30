@@ -70,4 +70,7 @@ This extracts the TAB ID, Note that TAB IDs with 6 digits have a space at the en
 =LEFT(B2,7)	
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 This pulls all the User Name Sheets to 'sheet' which is not editable, (so that it won't break). Also it only pulls Unique Rows, so if a user duplicated their Entries then it won't be dupliacted 
-=Unique(QUERY({USER.NAME!A2:I;USER.NAME!A2:I},"Select * where Col2 is not null"))	
+=Unique(QUERY({USER.NAME!A2:I;USER.NAME!A2:I},"Select * where Col2 is not null"))
+
+///////////////////////////
+=UNIQUE(QUERY({'timeEntries2018-08-29'!A2:T},"Select * where Col1 is not null",0))
