@@ -74,3 +74,19 @@ This pulls all the User Name Sheets to 'sheet' which is not editable, (so that i
 
 ///////////////////////////
 =UNIQUE(QUERY({'timeEntries2018-08-29'!A2:T},"Select * where Col1 is not null",0))
+
+
+//////
+need to explain this more but its to insert 8 rows beneath other rows
+function insertRows() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName("AXE");/* the name of the sheet*/
+  var sourceRange = sheet.getRange(1, 1, sheet.getLastRow());
+  var sheetData = sourceRange.getValues();
+  for (var i=0; i < sheetData.length; i++) {
+    if(sheetData[i][0]!=""){
+         sheet.insertRowsAfter(i+1, 8);/*  8 how many rows*/
+         sheetData = sheet.getRange(1, 1, sheet.getLastRow()).getValues();
+    }
+  }
+}
