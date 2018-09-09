@@ -90,3 +90,7 @@ function insertRows() {
     }
   }
 }
+////// TERMINAL Merge multiple text files:
+cat * > merged-file
+found here: https://unix.stackexchange.com/questions/3770/how-to-merge-all-text-files-in-a-directory-into-one
+////
