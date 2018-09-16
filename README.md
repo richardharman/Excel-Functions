@@ -94,3 +94,8 @@ function insertRows() {
 cat * > merged-file
 found here: https://unix.stackexchange.com/questions/3770/how-to-merge-all-text-files-in-a-directory-into-one
 ////
+finding a word in a string and pulling it in
+=QUERY( UniqueAllCombined!A:I, "Select * Where C like '%Group%' ")
+Found here
+https://productforums.google.com/forum/#!topic/docs/defcUoWf2iI
+//
