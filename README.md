@@ -63,7 +63,7 @@ Copy and paste url of sheet between "" and define the sheet inside ""
 
 
 
-This is hte one function used to import, brand data into a brand sheet that should only be viewable by client
+This is the one function used to import, brand data into a brand sheet that should only be viewable by client
 =query(IMPORTRANGE("URL of ths Sheet","ALLUPLOADS!A:I"),"select Col1,Col2,Col3,Col4,Col5,Col6,Col7,Col8,Col9 where Col6='Brand Name'")	
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 This extracts the TAB ID, Note that TAB IDs with 6 digits have a space at the end.//////////////////////////////////
