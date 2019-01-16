@@ -99,3 +99,6 @@ finding a word in a string and pulling it in
 Found here
 https://productforums.google.com/forum/#!topic/docs/defcUoWf2iI
 //
+////
+remove duplicates in a string (single cell): found:https://stackoverflow.com/questions/50937289/removing-duplicate-strings-from-a-comma-separated-list-in-a-cell
+=JOIN(", ",UNIQUE(TRANSPOSE(SPLIT(N2,", "))))
