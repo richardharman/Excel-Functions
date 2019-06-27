@@ -102,3 +102,37 @@ https://productforums.google.com/forum/#!topic/docs/defcUoWf2iI
 ////
 remove duplicates in a string (single cell): found:https://stackoverflow.com/questions/50937289/removing-duplicate-strings-from-a-comma-separated-list-in-a-cell
 =JOIN(", ",UNIQUE(TRANSPOSE(SPLIT(N2,", "))))
+
+
+
+
+/// A google script that checks if column D is populate and then writes today's date next to it in Column E
+/// Original found at https://webapps.stackexchange.com/questions/39086/auto-date-insert-when-opposite-cell-is-populated
+//------------------------------------------------------------
+ //Auto-Populate date in Column A of when column B is updated 
+ //Edited 01/13/16 - MK
+  //Auto-Populate date in Column E of when column D is updated 
+ //------------------------------------------------------------
+
+function onEdit(event) {
+  var eventRange = event.range;
+  if (eventRange.getColumn() == 4) { // 2 == column D
+
+    // getRange(row, column, numRows, numColumns)
+    var columnXRange = SpreadsheetApp.getActiveSheet().getRange(eventRange.getRow(), 5, eventRange.getNumRows(), 5);
+
+    var values = columnXRange.getValues();
+
+    for (var i = 0; i < values.length; i++) {
+      if (!values[i][0]) {  // If cell isn't empty
+       values[i][0] = new Date();
+      }
+    }
+    columnXRange.setValues(values);  
+  }
+}
+
+
+
+
+
