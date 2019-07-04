@@ -138,3 +138,4 @@ how to find duplicates in google sheets using conditional formatting
 found here: https://www.youtube.com/watch?v=skQEKi0zULg
 =countif(B:B,B1)>1
 
+///////
