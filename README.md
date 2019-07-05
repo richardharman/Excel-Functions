@@ -139,3 +139,6 @@ found here: https://www.youtube.com/watch?v=skQEKi0zULg
 =countif(B:B,B1)>1
 
 ///////
+=textjoin(" ",True,IF(B2='Celtra to Sizmek'!D3,'Celtra to Sizmek'!F3:G3,"")) 
+
+https://www.get-digital-help.com/2010/12/20/excel-udf-lookup-and-return-multiple-values-concatenated-into-one-cell/#concatenate
