@@ -142,3 +142,9 @@ found here: https://www.youtube.com/watch?v=skQEKi0zULg
 =textjoin(" ",True,IF(B2='Celtra to Sizmek'!D3,'Celtra to Sizmek'!F3:G3,"")) 
 
 https://www.get-digital-help.com/2010/12/20/excel-udf-lookup-and-return-multiple-values-concatenated-into-one-cell/#concatenate
+
+////
+
+
+## index match with two Criteria
+=ArrayFormula(index(Prices!E$2:E,match(concatenate(E49,K49),Prices!A$2:A&Prices!B$2:B,0),1))
