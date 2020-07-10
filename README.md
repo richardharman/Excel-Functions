@@ -148,3 +148,7 @@ https://www.get-digital-help.com/2010/12/20/excel-udf-lookup-and-return-multiple
 
 ## index match with two Criteria
 =ArrayFormula(index(Prices!E$2:E,match(concatenate(E49,K49),Prices!A$2:A&Prices!B$2:B,0),1))
+
+
+## extract the last word from a path this looks for "/" and gives your everything after that, found: https://www.spreadsheetclass.com/extract-text-or-numbers-from-a-string-in-google-sheets/
+=RIGHT(C2,LEN(C2)-FIND("*",SUBSTITUTE(C2,"/","*",LEN(C2)-LEN(SUBSTITUTE(C2,"/","")))))
