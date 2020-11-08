@@ -153,3 +153,6 @@ https://www.get-digital-help.com/2010/12/20/excel-udf-lookup-and-return-multiple
 ## extract the last word from a path this looks for "/" and gives your everything after that
 found @: https://www.spreadsheetclass.com/extract-text-or-numbers-from-a-string-in-google-sheets/
 =RIGHT(C2,LEN(C2)-FIND("*",SUBSTITUTE(C2,"/","*",LEN(C2)-LEN(SUBSTITUTE(C2,"/","")))))
+
+## take out currency from price "GDP 5.60" to "5.60"
+=VALUE(RIGHT(A1,LEN(A1)-4)) or =VALUE(REGEXEXTRACT(A1,”[0-9,.]+”)) to remove the GDP
