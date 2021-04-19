@@ -156,3 +156,7 @@ found @: https://www.spreadsheetclass.com/extract-text-or-numbers-from-a-string-
 
 ## take out currency from price "GDP 5.60" to "5.60"
 =VALUE(RIGHT(A1,LEN(A1)-4)) or =VALUE(REGEXEXTRACT(A1,”[0-9,.]+”)) to remove the GDP
+
+
+## Conditional formatting
+ =countif(C5:C,C5)>1
