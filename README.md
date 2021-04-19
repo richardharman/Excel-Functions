@@ -159,4 +159,4 @@ found @: https://www.spreadsheetclass.com/extract-text-or-numbers-from-a-string-
 
 
 ## Conditional formatting
- =countif(C5:C,C5)>1
+=countif(C:C,C1)>1
