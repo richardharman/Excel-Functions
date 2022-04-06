@@ -160,3 +160,8 @@ found @: https://www.spreadsheetclass.com/extract-text-or-numbers-from-a-string-
 
 ## Conditional formatting
 =countif(C:C,C1)>1
+
+## Reg ex for extracting words between quotes used in BBedit
+(["'])(?:(?=(\\?))\2.)*?\1
+
+
