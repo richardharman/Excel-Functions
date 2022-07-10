@@ -164,4 +164,10 @@ found @: https://www.spreadsheetclass.com/extract-text-or-numbers-from-a-string-
 ## Reg ex for extracting words between quotes used in BBedit
 (["'])(?:(?=(\\?))\2.)*?\1
 
+## Regext for extracting copy in google sheets
+Extracts all copy afer category:
+=REGEXEXTRACT('Query result'!F15,"[\n\r].*Category:\s*([^\n\r]*)")
+
+Extracts Watts form string so 1440W or 1399w 
+=REGEXEXTRACT(A4,"\d+[W-w]")
 
